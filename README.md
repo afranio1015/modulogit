@@ -16,27 +16,23 @@ C:\WINDOWS\system32>git config --global core.editor "Vs code"
 
 ----------------------------------------------------------------------------------
 Verificar qual usuário:
-
-C:\WINDOWS\system32>git config user.name
-Afranio Cruz
+>git config user.name
 ----------------------------------------------------------------------------------
 Comandos básicos CMD
-dentro da pasta modulogit (pasta do projeto) digitar >git init
---para ver as mudanças >git status
---adicionar monitoramento >git -A
---criar um commit >git commit -am "Primeiro Commit"
+dentro da pasta modulogit (pasta do projeto) digitar 
+>git init
+para ver as mudanças
+ >git status
+adicionar monitoramento 
+>git -A
+criar um commit 
+>git commit -am "nomeDoComnit"
 ----------------------------------------------------------------------------------
 Mostrar os commits criados
-c:\Projetos\modulogit>git log
-commit a03b10db6c179cfdb956b296359b36ae4206e9b7 (HEAD -> master)
-Author: Afranio Cruz <afranio.af1.web@gmail.com>
-Date:   Thu Feb 24 15:09:17 2022 -0300
-
-    Primeiro Commit
----------------------------------------------------------------------------------
+>git log
+----------------------------------------------------------------------------------
 Para saber em qual commit estamos
-c:\Projetos\modulogit>git branch
-* master
+>git branch
 ----------------------------------------------------------------------------------
 Voltando para um commit 
 > git reset --hard/soft numero do commit
@@ -60,7 +56,7 @@ Para saber apenas o que foi alterado em determinado arquivo
 ---------------------------------------------------------------------------------
 Para desfazer/retornar as alterações de determinado arquivo
 >git checkout HEAD -- nomeDoArquivo.xxx
-*HEAD - pega dentro dod branch atual.
+*HEAD - pega dentro do branch atual.
 ----------------------------------------------------------------------------------
 Criação do usuário e senha
 ----------------------------------------------------------------------------------
