@@ -2,23 +2,21 @@
 
 Git/GitHub
 O que é, pra que serve, como funciona?
-Versionamento
--para voltar se o programa der problema;
+-Versionamento
+Em resumo:
+-para voltar se o sistema der algum problema;
 -Trabalho em equipe
-
 --------------------------------------------------------------------------------
 Configurações iniciais
-C:\WINDOWS\system32>git config --global user.name "Afranio Cruz"
 
-C:\WINDOWS\system32>git config --global user.email "afranio.af1.web@gmail.com"
-
-C:\WINDOWS\system32>git config --global core.editor "Vs code"
-
+>git config --global user.name "nomeDoUsuario"
+>git config --global user.email "emailDoUsuario"
+>git config --global core.editor "Vs code"
 ----------------------------------------------------------------------------------
 Verificar qual usuário:
 >git config user.name
 ----------------------------------------------------------------------------------
-Comandos básicos CMD
+Comandos básicos CMD (cd para mudar de diretório)
 dentro da pasta modulogit (pasta do projeto) digitar 
 >git init
 para ver as mudanças
@@ -61,8 +59,8 @@ Para desfazer/retornar as alterações de determinado arquivo
 Criação do usuário e senha
 ----------------------------------------------------------------------------------
 Enviado os arquivos para o git remoto
-Gereando as chaves
->ssh-keygen -t rsa -b 4096 -c "afranio.af1@gmail.com"
+Gerando as chaves
+>ssh-keygen -t rsa -b 4096 -c "emailCadastrado"
 -copiar a chave publica e colar no github
 -comando para enviar os arquivos: 
 >git push -u origin master
