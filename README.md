@@ -6,16 +6,16 @@ Versionamento
 
 --------------------------------------------------------------------------------
 Configurações iniciais
-C:\WINDOWS\system32>git config --global user.name "Afranio Cruz"
+>git config --global user.name "Afranio Cruz"
 
-C:\WINDOWS\system32>git config --global user.email "afranio.af1.web@gmail.com"
+>git config --global user.email "afranio.af1.web@gmail.com"
 
-C:\WINDOWS\system32>git config --global core.editor "Vs code"
+>git config --global core.editor "Vs code"
 
 ----------------------------------------------------------------------------------
-Verificar qual usuário:
+Verificar o usuário atual:
 
-C:\WINDOWS\system32>git config user.name
+>git config user.name
 Afranio Cruz
 ----------------------------------------------------------------------------------
 Comandos básicos CMD
