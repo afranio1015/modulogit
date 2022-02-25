@@ -68,6 +68,10 @@ Gerando as chaves
 Fazendo alterações no repositório remoto
 1. Fazer commit dos arquivos alterados no repositorio local
 2. Fazer o Push -> git push origin master  
+--------------------------------------------------------------------------------------
+Ignorando arquivos do repositório
+Criar arquivo .gitignore e colocar nesse arquivo o nome dos arquivos a serem ignorados (*.sql, *.txt, NomeDePasta ou nomeDeArquivoEspecifico).
+--------------------------------------------------------------------------------------
 
 
 
