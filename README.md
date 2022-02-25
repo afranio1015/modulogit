@@ -10,19 +10,25 @@ Em resumo:
 Configurações iniciais
 
 >git config --global user.name "nomeDoUsuario"
+
 >git config --global user.email "emailDoUsuario"
+
 >git config --global core.editor "Vs code"
 ----------------------------------------------------------------------------------
 Verificar qual usuário:
 >git config user.name
 ----------------------------------------------------------------------------------
+
 Comandos básicos CMD (cd para mudar de diretório)
 dentro da pasta modulogit (pasta do projeto) digitar 
 >git init
+
 para ver as mudanças
  >git status
+
 adicionar monitoramento 
 >git -A
+
 criar um commit 
 >git commit -am "nomeDoComnit"
 ----------------------------------------------------------------------------------
@@ -34,6 +40,7 @@ Para saber em qual commit estamos
 ----------------------------------------------------------------------------------
 Voltando para um commit 
 > git reset --hard/soft numero do commit
+
 *hard: apaga todos os arquivos
 *soft: mantem os arquivos preparado para um novo commit
 ----------------------------------------------------------------------------------
