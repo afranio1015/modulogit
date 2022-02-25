@@ -6,7 +6,7 @@ O que é, pra que serve, como funciona?
 Em resumo:
 -para voltar se o sistema der algum problema;
 -Trabalho em equipe
---------------------------------------------------------------------------------
+>--------------------------------------------------------------------------------
 Configurações iniciais
 
 >git config --global user.name "nomeDoUsuario"
@@ -55,8 +55,10 @@ Para saber apenas o que foi alterado em determinado arquivo
 Para desfazer/retornar as alterações de determinado arquivo
 >git checkout HEAD -- nomeDoArquivo.xxx
 *HEAD - pega dentro do branch atual.
+>
 ----------------------------------------------------------------------------------
 Criação do usuário e senha
+>
 ----------------------------------------------------------------------------------
 Enviado os arquivos para o git remoto
 Gerando as chaves
@@ -68,10 +70,10 @@ Gerando as chaves
 Fazendo alterações no repositório remoto
 1. Fazer commit dos arquivos alterados no repositorio local
 2. Fazer o Push -> git push origin master  
---------------------------------------------------------------------------------------
+>--------------------------------------------------------------------------------------
 Ignorando arquivos do repositório
 Criar arquivo .gitignore e colocar nesse arquivo o nome dos arquivos a serem ignorados (*.sql, *.txt, NomeDePasta ou nomeDeArquivoEspecifico).
---------------------------------------------------------------------------------------
+>--------------------------------------------------------------------------------------
 
 
 
