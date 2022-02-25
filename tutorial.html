@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Anotações das aulas da B7Web de GIT</h1>
+
+    <h2>Git/GitHub</h2>
+    <p>O que é, pra que serve, como funciona?</p>
+    Versionamento de sistemas<br />
+    Em resumo:<br />
+    -para voltar se o sistema der algum problema;<br />
+    -Trabalho em equipe<br />
+    <hr>
+    <br /><b>Configurações iniciais</b>
+    >git config --global user.name "nomeDoUsuario"<br />
+
+    >git config --global user.email "emailDoUsuario"<br />
+
+    >git config --global core.editor "Vs code"<br />
+    <hr>
+    <b>Verificar qual usuário:</b><br />
+    >git config user.name
+    <hr>
+    <b>Adicionando o repositorio ao GIT</b><br />
+    Dentro da pasta modulogit (pasta do projeto) digitar:<br />
+    >git init<br />
+
+    <b>Para verificar as alterações</b>
+    >git status<br />
+    Adicionar mudanças ao monitoramento<br />
+    >git -A <br />
+
+    <b>Criando um commit</b>
+    >git commit -am "nomeDoComnit"<br />
+    <hr>
+    <b>Mostrando os commits criados</b><br />
+    >git log<br />
+    <hr>
+    <b>Para saber em qual branch estamos</b><br />
+    >git branch<br />
+    <hr>
+    <b>Voltando para um commit</b><br />
+    >git reset --hard numeroDoCommit | >git reset --soft numeroDoCommit <br />
+    *hard: apaga todos os arquivos<br />
+    *soft: mantem os arquivos preparado para um novo commit<br />
+    <hr>
+    <b>Criando um novo branch</b><br />
+    >git branch nomeBranch<br />
+    ----------------------------------------------------------------------------------<br />
+    Mudando de branch<br />
+    >git checkout nomeBranch<br />
+    ----------------------------------------------------------------------------------<br />
+    Para saber o que foi alterado exatamente<br />
+    >git diff<br />
+    ----------------------------------------------------------------------------------<br />
+    Para saber qual arquivo foi modificado<br />
+    >git diff --name-only<br />
+    ---------------------------------------------------------------------------------<br />
+    Para saber apenas o que foi alterado em determinado arquivo<br />
+    >git diff nomeDoArquivo.xxx<br />
+    ---------------------------------------------------------------------------------<br />
+    Para desfazer/retornar as alterações de determinado arquivo
+    >git checkout HEAD -- nomeDoArquivo.xxx
+    *HEAD - pega dentro do branch atual.
+    >
+    ----------------------------------------------------------------------------------<br />
+    Criação do usuário e senha
+    >
+    ----------------------------------------------------------------------------------<br />
+    Enviado os arquivos para o git remoto
+
+    Gerando as chaves:
+    >ssh-keygen -t rsa -b 4096 -c "emailCadastrado"
+
+    >copiar a chave publica e colar no github
+
+    comando para enviar os arquivos:
+    >git push -u origin master
+    ------------------------------------------------------------------------------------<br />
+    Fazendo alterações no repositório remoto<br />
+    1. Fazer commit dos arquivos alterados no repositorio local<br />
+    2. Fazer o Push<br />
+    > git push origin master <br />
+    >--------------------------------------------------------------------------------------<br />
+    Ignorando arquivos do repositório <br />
+
+    Criar arquivo .gitignore e colocar nesse arquivo o nome dos arquivos a serem ignorados<br /> (*.sql, *.txt,
+    NomeDePasta ou nomeDeArquivoEspecifico).
+    >--------------------------------------------------------------------------------------<br />
+    Revertendo sem perder o código (Revert)<br />
+    >git revert --no-edit codigoDoCommit<br />
+    ---------------------------------------------------------------------------------------<br />
+    Deletando branches:<br />
+    Remotos:<br />
+    >git push origin :nomeDobranch <br />
+
+    Locais:<br />
+    Sair do branch a ser deletado<br />
+    >git branch -D noDobranch<br />
+    ---------------------------------------------------------------------------------------<br />
+    Puxando alterações de outras pessoas (pull):<br />
+    >git pull origin master<br />
+
+    *Recomendação: antes de realizar um push, fazer um pull primeiro.<br />
+    >---------------------------------------------------------------------------------------<br />
+    Clonando repositórios remotos:<br />
+    >copiar o link do repositório<br />
+
+    No terminal (na pasta do projeto):<br />
+
+    >git clone urlDoRepositorio<br />
+    -----------------------------------------------------------------------------------------<br />
+    Contribuindo com outros repositórios (fork / pull request)<br />
+    1. Fazer um fork do repositório que você quer fazer uma contribuição<br />
+    2. Fazer um clone desse repositório<br />
+    3. Fazer as alterações <br />
+    4. Fazer um push<br />
+    5. No github, fazer um pull request para o repositório de origem<br />
+    >------------------------------------------------------------------------------------------<br />
+
+
+</body>
+
+</html>
