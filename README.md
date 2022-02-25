@@ -40,10 +40,9 @@ Para saber em qual commit estamos
 ----------------------------------------------------------------------------------
 Voltando para um commit 
 > git reset --hard/soft numero do commit
-
 *hard: apaga todos os arquivos
 *soft: mantem os arquivos preparado para um novo commit
-----------------------------------------------------------------------------------
+>----------------------------------------------------------------------------------
 Criar um novo branch
 >git branch nomeBranch
 ----------------------------------------------------------------------------------
@@ -68,10 +67,13 @@ Criação do usuário e senha
 >
 ----------------------------------------------------------------------------------
 Enviado os arquivos para o git remoto
-Gerando as chaves
+
+Gerando as chaves:
 >ssh-keygen -t rsa -b 4096 -c "emailCadastrado"
--copiar a chave publica e colar no github
--comando para enviar os arquivos: 
+
+>copiar a chave publica e colar no github
+
+comando para enviar os arquivos: 
 >git push -u origin master
 ------------------------------------------------------------------------------------
 Fazendo alterações no repositório remoto
@@ -79,6 +81,7 @@ Fazendo alterações no repositório remoto
 2. Fazer o Push -> git push origin master  
 >--------------------------------------------------------------------------------------
 Ignorando arquivos do repositório
+
 Criar arquivo .gitignore e colocar nesse arquivo o nome dos arquivos a serem ignorados (*.sql, *.txt, NomeDePasta ou nomeDeArquivoEspecifico).
 >--------------------------------------------------------------------------------------
 
