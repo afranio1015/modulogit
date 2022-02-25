@@ -40,7 +40,9 @@ Para saber em qual commit estamos
 ----------------------------------------------------------------------------------
 Voltando para um commit 
 > git reset --hard/soft numero do commit
+
 *hard: apaga todos os arquivos
+
 *soft: mantem os arquivos preparado para um novo commit
 >----------------------------------------------------------------------------------
 Criar um novo branch
@@ -80,10 +82,41 @@ Fazendo alterações no repositório remoto
 1. Fazer commit dos arquivos alterados no repositorio local
 2. Fazer o Push -> git push origin master  
 >--------------------------------------------------------------------------------------
-Ignorando arquivos do repositório
+Ignorando arquivos do repositório 
 
 Criar arquivo .gitignore e colocar nesse arquivo o nome dos arquivos a serem ignorados (*.sql, *.txt, NomeDePasta ou nomeDeArquivoEspecifico).
 >--------------------------------------------------------------------------------------
+Revertendo sem perder o código (Revert)
+>git revert --no-edit codigoDoCommit
+---------------------------------------------------------------------------------------
+Deletando branches:
+Remotos:
+>git push origin :nomeDobranch 
+
+Locais:
+Sair do branch a ser deletado
+>git branch -D noDobranch
+---------------------------------------------------------------------------------------
+Puxando alterações de outras pessoas (pull):
+>git pull origin master
+
+*Recomendação: antes de realizar um push, fazer um pull primeiro.
+>---------------------------------------------------------------------------------------
+Clonando repositórios remotos:
+>copiar o link do repositório
+No terminal (na pasta do projeto):
+>git clone urlDoRepositorio
+-----------------------------------------------------------------------------------------
+Contribuindo com outros repositórios (fork / pull request)
+1. Fazer um fork do repositório que você quer fazer uma contribuição
+2. Fazer um clone desse repositório
+3. Fazer as alterações 
+4. Fazer um push
+5. No github, fazer um pull request para o repositório de origem
+>------------------------------------------------------------------------------------------
+
+
+
 
 
 
