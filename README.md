@@ -104,7 +104,9 @@ Puxando alterações de outras pessoas (pull):
 >---------------------------------------------------------------------------------------
 Clonando repositórios remotos:
 >copiar o link do repositório
+
 No terminal (na pasta do projeto):
+
 >git clone urlDoRepositorio
 -----------------------------------------------------------------------------------------
 Contribuindo com outros repositórios (fork / pull request)
