@@ -1,5 +1,6 @@
-<<<<<<< HEAD
---Anotações das aulas da B7Web de GIT---
+<Neste repositório contem anotações das aulas de Git realizadas pela B7Web.
+Acessar o arquivo tutorial.html.>
+
 
 Git/GitHub
 O que é, pra que serve, como funciona?
@@ -39,7 +40,7 @@ Mostrar os commits criados
 Para saber em qual commit estamos
 >git branch
 ----------------------------------------------------------------------------------
-Voltando para um commit 
+Voltando para um commit
 > git reset --hard/soft numero do commit
 *hard: apaga todos os arquivos
 *soft: mantem os arquivos preparado para um novo commit
@@ -85,13 +86,11 @@ Ignorando arquivos do repositório
 
 Criar arquivo .gitignore e colocar nesse arquivo o nome dos arquivos a serem ignorados (*.sql, *.txt, NomeDePasta ou nomeDeArquivoEspecifico).
 >--------------------------------------------------------------------------------------
-=======
-Neste repositório contem anotações das aulas de Git realizadas pela B7Web.
-Acessar o arquivo tutorial.html.
 
 
 
->>>>>>> 6fdc7be2887b0baabb70dcad8d49254b71d9d037
+
+
 
 
 
